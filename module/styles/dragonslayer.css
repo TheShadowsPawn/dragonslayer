@@ -1,1 +1,291 @@
+/* Main Sheet Styles */
+.dragonslayer {
+    min-height: 100%;
+}
 
+/* Sheet Header */
+.sheet-header {
+    flex: 0 0 100px;
+    border-bottom: 2px solid #000;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sheet-header .profile-img {
+    flex: 0 0 100px;
+    height: 100px;
+    margin-right: 10px;
+    border: 2px solid #000;
+}
+
+.sheet-header .header-fields {
+    flex: 1;
+}
+
+.header-fields input {
+    height: 24px;
+    border: 1px solid #7a7971;
+    background: rgba(0, 0, 0, 0.05);
+    color: #191813;
+}
+
+/* Navigation Tabs */
+.tabs {
+    flex: 0;
+    margin-bottom: 5px;
+    border-top: 1px solid #AAA;
+    border-bottom: 1px solid #AAA;
+}
+
+.tabs .item {
+    padding: 10px;
+}
+
+.tabs .item.active {
+    color: #000;
+    border-bottom: 3px solid #782e22;
+    text-shadow: none;
+}
+
+/* Ability Scores */
+.ability-scores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px;
+}
+
+.ability-score {
+    flex: 1 0 calc(33.33% - 10px);
+    border: 1px solid #AAA;
+    padding: 5px;
+    text-align: center;
+}
+
+.ability-score label {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.ability-score input {
+    width: 50px;
+    text-align: center;
+}
+
+.ability-modifiers {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Combat Stats */
+.combat-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.health-section, .armor-section {
+    border: 1px solid #AAA;
+    padding: 10px;
+    text-align: center;
+}
+
+.health-values {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.health-values input {
+    width: 60px;
+    text-align: center;
+}
+
+/* Inventory */
+.inventory-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.inventory-item {
+    padding: 5px;
+    border-bottom: 1px solid #AAA;
+    display: flex;
+    align-items: center;
+}
+
+.item-name {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.item-name img {
+    flex: 0 0 24px;
+    margin-right: 5px;
+}
+
+/* Spells */
+.spell-slots {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #AAA;
+}
+
+.spell-level {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.spell-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.spell-item {
+    padding: 5px;
+    border-bottom: 1px solid #AAA;
+}
+
+/* Buttons and Controls */
+button {
+    background: #782e22;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #943a2c;
+}
+
+.item-controls {
+    display: flex;
+    gap: 5px;
+}
+
+/* Roll Results */
+.roll-result {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.roll-info {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.roll {
+    font-weight: bold;
+}
+
+.critical-hit {
+    background: rgba(39, 174, 96, 0.1);
+    border: 1px solid #27ae60;
+}
+
+.critical-miss {
+    background: rgba(192, 57, 43, 0.1);
+    border: 1px solid #c0392b;
+}
+
+/* Combat Options */
+.combat-options {
+    padding: 10px;
+}
+
+.combat-option {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #AAA;
+}
+
+.combat-option label {
+    display: flex;
+    align-items: center;
+}
+
+.combat-option-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-left: 20px;
+}
+
+/* Saving Throws */
+.saves-section {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #AAA;
+}
+
+.saves-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.save-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+/* Bind Wounds */
+.bind-wounds-button {
+    width: 100%;
+    margin-top: 5px;
+    background: #2ecc71;
+}
+
+.bind-wounds-button:hover {
+    background: #27ae60;
+}
+
+/* Morale */
+.morale-check {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #AAA;
+}
+
+/* Encumbrance */
+.encumbrance-section {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #AAA;
+}
+
+/* Background Tab */
+.editor {
+    height: 300px;
+    border: 1px solid #AAA;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .ability-scores {
+        flex-direction: column;
+    }
+    
+    .combat-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .saves-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
