@@ -1,1 +1,33 @@
-
+{
+  "Actor": {
+    "types": ["character", "npc"],
+    "templates": {
+      "base": {
+        "health": {
+          "value": 10,
+          "max": 10
+        }
+      }
+    },
+    "character": {
+      "templates": ["base"]
+    },
+    "npc": {
+      "templates": ["base"]
+    }
+  },
+  "Item": {
+    "types": ["item", "spell"],
+    "templates": {
+      "base": {
+        "description": ""
+      }
+    },
+    "item": {
+      "templates": ["base"]
+    },
+    "spell": {
+      "templates": ["base"]
+    }
+  }
+}
