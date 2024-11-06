@@ -14,7 +14,7 @@
     }
   ],
   "esmodules": [""],
-  "esmodules": ["module/dragonslayer.mjs"],
+  "esmodules": [""],
   "styles": ["styles/dragonslayer.css"],
   "packs": [],
   "languages": [
