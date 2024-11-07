@@ -1,17 +1,180 @@
 {
   "Actor": {
-    "types": ["character"],
-    "character": {
-      "hp": {
-        "value": 10,
-        "max": 10
+    "types": ["character", "npc"],
+    "templates": {
+      "base": {
+        "attributes": {
+          "str": {
+            "value": 10,
+            "meleeModifier": 0,
+            "forceDoorModifier": 0
+          },
+          "int": {
+            "value": 10,
+            "languageModifier": 0,
+            "numLanguages": 0
+          },
+          "wis": {
+            "value": 10,
+            "magicSaveModifier": 0
+          },
+          "dex": {
+            "value": 10,
+            "missileModifier": 0,
+            "armorModifier": 0
+          },
+          "con": {
+            "value": 10,
+            "hitPointModifier": 0
+          },
+          "cha": {
+            "value": 10,
+            "numHenchmen": 0,
+            "henchmenMorale": 0
+          }
+        },
+        "movement": {
+          "base": 0,
+          "current": 0,
+          "encumbranceState": {
+            "armorType": "none",
+            "carryingTreasure": false,
+            "movementRate": 0
+          }
+        },
+        "details": {
+          "alignment": "",
+          "deity": "",
+          "age": "",
+          "height": "",
+          "weight": "",
+          "languages": [],
+          "level": 1,
+          "title": "",
+          "xpBonus": 0,
+          "experience": 0,
+          "attackBonus": 0
+        },
+        "saves": {
+          "breath": {
+            "value": 0,
+            "base": 0,
+            "mod": 0
+          },
+          "death": {
+            "value": 0,
+            "base": 0,
+            "mod": 0
+          },
+          "stone": {
+            "value": 0,
+            "base": 0,
+            "mod": 0
+          },
+          "wand": {
+            "value": 0,
+            "base": 0,
+            "mod": 0
+          },
+          "spell": {
+            "value": 0,
+            "base": 0,
+            "mod": 0
+          }
+        },
+        "health": {
+          "value": 10,
+          "max": 10,
+          "temp": 0
+        },
+        "spellSlots": {
+          "spell1": {
+            "value": 0,
+            "max": 0
+          },
+          "spell2": {
+            "value": 0,
+            "max": 0
+          },
+          "spell3": {
+            "value": 0,
+            "max": 0
+          },
+          "spell4": {
+            "value": 0,
+            "max": 0
+          },
+          "spell5": {
+            "value": 0,
+            "max": 0
+          },
+          "spell6": {
+            "value": 0,
+            "max": 0
+          },
+          "spell7": {
+            "value": 0,
+            "max": 0
+          },
+          "spell8": {
+            "value": 0,
+            "max": 0
+          },
+          "spell9": {
+            "value": 0,
+            "max": 0
+          }
+        }
       }
+    },
+    "character": {
+      "templates": ["base"],
+      "race": "",
+      "class": "",
+      "abilities": []
+    },
+    "npc": {
+      "templates": ["base"],
+      "hitDice": 0,
+      "morale": 7,
+      "reaction": "",
+      "treasure": "",
+      "type": ""
     }
   },
   "Item": {
-    "types": ["item"],
+    "types": ["item", "spell"],
+    "templates": {
+      "baseItem": {
+        "description": "",
+        "quantity": 1,
+        "equipped": false,
+        "bonuses": {
+          "attackBonus": 0,
+          "damageBonus": 0,
+          "armorClass": 0
+        }
+      }
+    },
     "item": {
-      "description": ""
+      "templates": ["baseItem"],
+      "damage": "",
+      "range": "",
+      "properties": []
+    },
+    "spell": {
+      "description": "",
+      "classLevels": {
+        "cleric": null,
+        "magicUser": null,
+        "druid": null,
+        "illusionist": null
+      },
+      "duration": "",
+      "range": "",
+      "prepared": false,
+      "memorized": 0,
+      "maxMemorized": 0
     }
   }
 }
