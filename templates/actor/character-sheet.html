@@ -19,6 +19,31 @@
                 </div>
                 {{/each}}
             </div>
+<!-- Add this after the ability-scores div -->
+<div class="character-stats">
+    <div class="resource">
+        <label>Hit Points</label>
+        <div class="resource-value">
+            <input type="text" name="system.health.value" value="{{system.health.value}}" data-dtype="Number"/>
+            <span class="separator">/</span>
+            <input type="text" name="system.health.max" value="{{system.health.max}}" data-dtype="Number"/>
+        </div>
+    </div>
+    <div class="stats-group">
+        <div class="stat">
+            <label>Level</label>
+            <input type="text" name="system.details.level" value="{{system.details.level}}" data-dtype="Number"/>
+        </div>
+        <div class="stat">
+            <label>Class</label>
+            <input type="text" name="system.class" value="{{system.class}}"/>
+        </div>
+        <div class="stat">
+            <label>Race</label>
+            <input type="text" name="system.race" value="{{system.race}}"/>
+        </div>
+    </div>
+</div> 
         </div>
     </section>
 </form>
