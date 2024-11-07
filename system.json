@@ -1,7 +1,6 @@
 {
   "id": "dragonslayer",
   "title": "Dragonslayer RPG",
-  "description": "The Dragonslayer RPG system for Foundry VTT",
   "version": "0.1",
   "compatibility": {
     "minimum": 11,
@@ -13,21 +12,10 @@
       "name": "Todd Antill"
     }
   ],
-  "esmodules": [""],
-  "esmodules": [""],
-  "styles": ["styles/dragonslayer.css"],
+  "scripts": ["dragonslayer.js"],
+  "styles": [],
   "packs": [],
-  "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
-    }
-  ],
-  "grid": {
-    "distance": 5,
-    "units": "ft"
-  },
+  "languages": [],
   "url": "https://github.com/TheShadowsPawn/dragonslayer",
   "manifest": "https://github.com/TheShadowsPawn/dragonslayer/releases/latest/download/system.json",
   "download": "https://github.com/TheShadowsPawn/dragonslayer/releases/latest/download/dragonslayer.zip"
