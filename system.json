@@ -12,11 +12,13 @@
       "name": "Todd Antill"
     }
   ],
-  "scripts": ["dragonslayer.js"],
-  "styles": [],
+  "scripts": ["scripts/dragonslayer.js"],
+  "styles": ["styles/dragonslayer.css"],
   "packs": [],
   "languages": [],
   "url": "https://github.com/TheShadowsPawn/dragonslayer",
   "manifest": "https://github.com/TheShadowsPawn/dragonslayer/releases/latest/download/system.json",
   "download": "https://github.com/TheShadowsPawn/dragonslayer/releases/latest/download/dragonslayer.zip"
 }
+
+
