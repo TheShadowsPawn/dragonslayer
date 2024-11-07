@@ -1,0 +1,24 @@
+<form class="{{cssClass}} actor-sheet" autocomplete="off">
+    <header class="sheet-header">
+        <h1 class="charname">
+            <input name="name" type="text" value="{{actor.name}}" placeholder="Name"/>
+        </h1>
+    </header>
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="attributes">Attributes</a>
+    </nav>
+    <section class="sheet-body">
+        <div class="tab attributes" data-group="primary" data-tab="attributes">
+            <div class="ability-scores">
+                {{#each system.attributes as |ability key|}}
+                <div class="ability-score">
+                    <label class="ability-name rollable" data-ability="{{key}}">{{key}}</label>
+                    <div class="ability-value">
+                        <input type="text" name="system.attributes.{{key}}.value" value="{{ability.value}}" data-dtype="Number"/>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+</form>
