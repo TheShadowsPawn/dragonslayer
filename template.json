@@ -1,33 +1,17 @@
 {
   "Actor": {
-    "types": ["character", "npc"],
-    "templates": {
-      "base": {
-        "health": {
-          "value": 10,
-          "max": 10
-        }
-      }
-    },
+    "types": ["character"],
     "character": {
-      "templates": ["base"]
-    },
-    "npc": {
-      "templates": ["base"]
+      "hp": {
+        "value": 10,
+        "max": 10
+      }
     }
   },
   "Item": {
-    "types": ["item", "spell"],
-    "templates": {
-      "base": {
-        "description": ""
-      }
-    },
+    "types": ["item"],
     "item": {
-      "templates": ["base"]
-    },
-    "spell": {
-      "templates": ["base"]
+      "description": ""
     }
   }
 }
